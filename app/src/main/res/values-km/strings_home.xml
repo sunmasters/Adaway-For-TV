@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <string name="preferences_drawer_item">ការកំណត់</string>
+
+    <!-- Error dialog -->
+    <string name="error_dialog_help">សូមអាន \"ជំនួយ\" សម្រាប់ព័តមានបន្ថែម</string>
+
+</resources>

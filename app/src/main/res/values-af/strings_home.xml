@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <string name="preferences_drawer_item">Voorkeure</string>
+
+    <!-- Error dialog -->
+    <string name="error_dialog_help">Lees asb. help vir meer informasie.</string>
+
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pref_vpn_title">Bloqueur de publicités fondé sur un RPV</string>
+    <!-- Service configuration -->
+    <string name="pref_vpn_service_on_boot">Activer au démarrage</string>
+    <string name="pref_vpn_service_monitor">Surveiller la connexion</string>
+    <string name="pref_vpn_service_monitor_description">Vérifier régulièrement l’état du réseau pour relancer le RPV après une déconnexion.</string>
+    <!-- Excluded applications -->
+    <string name="pref_vpn_excluded_apps">Applications exclues</string>
+    <string name="pref_vpn_excluded_apps_description">Configurer les applis qui ne devraient pas utiliser le RPV, afin qu’aucune connexion ne soit bloquée.</string>
+    <string name="pref_vpn_exclude_system_apps">Exclure les applications système</string>
+    <string-array name="pref_vpn_excluded_system_apps_entries">
+        <item>Aucune</item>
+        <item>Toutes, sauf les navigateurs</item>
+        <item>Toutes</item>
+    </string-array>
+    <string name="pref_vpn_exclude_user_apps">Exclure des applications utilisateur</string>
+
+    <!-- Exclude user apps activity -->
+    <string name="pref_vpn_exclude_user_apps_activity">Applications exclues</string>
+    <string name="pref_vpn_exclude_user_apps_select_all">Les sélectionner toutes</string>
+    <string name="pref_vpn_exclude_user_apps_deselect_all">Les dessélectionner toutes</string>
+    <string name="pref_vpn_exclude_user_apps_icon">Icône de l’application</string>
+</resources>

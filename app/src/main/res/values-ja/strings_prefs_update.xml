@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="pref_update_title">アップデート</string>
+    <string name="pref_update_enable_notifications">通知がオフされています</string>
+    <string name="pref_update_enable_notifications_summary">アプリケーションの通知は表示されません。タップして有効にする。</string>
+    <!-- Application category -->
+    <string name="pref_update_app_category">アプリケーションの更新</string>
+    <string name="pref_update_check_app_startup">起動時にアップデートを確認する</string>
+    <string name="pref_update_check_app_daily">定期的なアップデートの確認</string>
+    <string name="pref_update_include_beta_releases">ベータ版のリリースを含める</string>
+    <!-- Application hosts -->
+    <string name="pref_update_hosts_category">hostsの更新</string>
+    <string name="pref_update_check">起動時にアップデートを確認する</string>
+    <string name="pref_update_check_hosts_daily">定期的なアップデートの確認</string>
+    <string name="pref_update_sync_on_update">更新時に同期する</string>
+    <string name="pref_update_sync_unmetered_only">非課金ネットワークでのみ同期</string>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <string name="preferences_drawer_item">การตั้งค่า</string>
+
+    <!-- Error dialog -->
+    <string name="error_dialog_help">กรุณาอ่านช่วยเหลือสำหรับข้อมูลเพิ่มเติม</string>
+
+</resources>

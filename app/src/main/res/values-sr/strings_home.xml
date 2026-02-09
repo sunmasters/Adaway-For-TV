@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <string name="preferences_drawer_item">Podešavanja</string>
+
+    <!-- Error dialog -->
+    <string name="error_dialog_help">Molimo da pročitate Pomoć za više informacija.</string>
+
+</resources>

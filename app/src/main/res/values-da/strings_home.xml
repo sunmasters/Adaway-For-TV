@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <string name="preferences_drawer_item">Indstillinger</string>
+
+    <!-- Error dialog -->
+    <string name="error_dialog_help">Venligst læs Hjælp for mere information.</string>
+
+</resources>
