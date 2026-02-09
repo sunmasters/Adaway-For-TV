@@ -101,8 +101,8 @@ It is recommended to try those builds to see if your issue is resolved before cr
 The preview builds may contain bug fixes or new features for new Android versions.
 
 [<img src="Resources/get-it-on-adaway.png"
-      alt="Get it on official AdAway website"
-      height="80">](https://app.adaway.org/beta.apk)
+      alt="Download AdAway for TV"
+      height="80">](https://github.com/sunmasters/Adaway-For-TV/releases/download/1.0/adaway.apk)
 [<img src="Resources/XDADevelopers.png"
       raw="true"
       alt="Get it on XDA forum"
@@ -115,8 +115,8 @@ The preview builds may contain bug fixes or new features for new Android version
 After preview builds have been tested by the more technical or responsive community within the forums, we will then post the stable build to F-Droid.
 
 [<img src="Resources/get-it-on-adaway.png"
-    alt="Get it on official AdAway website"
-    height="80">](https://app.adaway.org/adaway.apk)
+    alt="Download AdAway for TV"
+    height="80">](https://github.com/sunmasters/Adaway-For-TV/releases/download/1.0/adaway.apk)
 [<img src="Resources/get-it-on-fdroid.png"
       raw="true"
       alt="Get it on F-Droid"
