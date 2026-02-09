@@ -9,6 +9,8 @@
 AdAway is an open source ad blocker for Android using the hosts file and local VPN.
 Now with **Android TV support** — block ads across your phone, tablet, and TV from a single app.
 
+**[Download Latest Release](https://github.com/sunmasters/Adaway-For-TV/releases/download/1.0/adaway.apk)**
+
 ## Screenshots
 
 ### Android TV
