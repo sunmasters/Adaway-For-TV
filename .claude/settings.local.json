@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "Bash(git add:*)",
-      "Bash(git commit -m \"$\\(cat <<''EOF''\nInitial commit: AdAway with Android TV support\n\nAdd full project source with dedicated TV interface including:\n- TV home screen with ad-blocking toggle, update, sync controls\n- TV DNS request log viewer with host management\n- D-pad navigation and Leanback launcher integration\n- Updated README with TV screenshots and documentation\n- Original README preserved as README_OLD.md\n\nCo-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>\nEOF\n\\)\")"
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nInitial commit: AdAway with Android TV support\n\nAdd full project source with dedicated TV interface including:\n- TV home screen with ad-blocking toggle, update, sync controls\n- TV DNS request log viewer with host management\n- D-pad navigation and Leanback launcher integration\n- Updated README with TV screenshots and documentation\n- Original README preserved as README_OLD.md\n\nCo-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git remote add:*)"
     ]
   }
 }
