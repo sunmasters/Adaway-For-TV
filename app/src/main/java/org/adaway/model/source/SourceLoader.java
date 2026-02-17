@@ -148,6 +148,18 @@ class SourceLoader {
         private HostListItem parseHostListItem(String line) {
             Matcher matcher = HOSTS_PARSER_PATTERN.matcher(line);
             if (!matcher.matches()) {
+                // Support domain-only format (one domain per line, no IP prefix)
+                String domain = line.contains("#") ? line.substring(0, line.indexOf('#')) : line;
+                domain = domain.trim();
+                if (!domain.isEmpty() && !LOCALHOST_HOSTNAME.equals(domain)
+                        && (RegexUtils.isValidHostname(domain) || RegexUtils.isValidWildcardHostname(domain))) {
+                    HostListItem item = new HostListItem();
+                    item.setType(BLOCKED);
+                    item.setHost(domain);
+                    item.setEnabled(true);
+                    item.setSourceId(this.source.getId());
+                    return item;
+                }
                 Timber.d("Does not match: %s.", line);
                 return null;
             }
@@ -205,7 +217,17 @@ class SourceLoader {
             String hostname = item.getHost();
             if (item.getType() == BLOCKED) {
                 if (hostname.indexOf('?') != -1 || hostname.indexOf('*') != -1) {
-                    return false;
+                    if (!RegexUtils.isValidWildcardHostname(hostname)) {
+                        return false;
+                    }
+                    // Require at least 2 dots to prevent overly broad wildcards (e.g., *.com)
+                    int dotCount = 0;
+                    for (int i = 0; i < hostname.length(); i++) {
+                        if (hostname.charAt(i) == '.') {
+                            dotCount++;
+                        }
+                    }
+                    return dotCount >= 2;
                 }
                 return RegexUtils.isValidHostname(hostname);
             }

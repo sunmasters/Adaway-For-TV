@@ -48,7 +48,22 @@ public class VpnModel extends AdBlockModel {
         this.blockCache = new LruCache<String, HostEntry>(4 * 1024) {
             @Override
             protected HostEntry create(String key) {
-                return VpnModel.this.hostEntryDao.getEntry(key);
+                // Try exact match first
+                HostEntry entry = VpnModel.this.hostEntryDao.getEntry(key);
+                if (entry != null) {
+                    return entry;
+                }
+                // Walk up domain hierarchy for wildcard matches
+                int dotIndex = key.indexOf('.');
+                while (dotIndex != -1) {
+                    String wildcardHost = "*" + key.substring(dotIndex);
+                    entry = VpnModel.this.hostEntryDao.getEntry(wildcardHost);
+                    if (entry != null) {
+                        return entry;
+                    }
+                    dotIndex = key.indexOf('.', dotIndex + 1);
+                }
+                return null;
             }
         };
         this.recordingLogs = PreferenceHelper.getVpnDnsLogEnabled(context);
