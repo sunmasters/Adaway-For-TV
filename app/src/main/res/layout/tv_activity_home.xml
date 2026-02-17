@@ -67,6 +67,26 @@
         android:text="DNS Monitor"
         android:focusable="true"
         android:nextFocusUp="@id/btn_update"
+        android:nextFocusDown="@id/btn_sources"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btn_sources"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hosts_title"
+        android:focusable="true"
+        android:nextFocusUp="@id/btn_dns_monitor"
+        android:nextFocusDown="@id/btn_support_dev"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btn_support_dev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Support Dev"
+        android:focusable="true"
+        android:nextFocusUp="@id/btn_sources"
         android:layout_marginTop="16dp"/>
 
     <ProgressBar

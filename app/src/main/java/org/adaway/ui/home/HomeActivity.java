@@ -50,7 +50,7 @@ import org.adaway.ui.hosts.HostsSourcesActivity;
 import org.adaway.ui.lists.ListsActivity;
 import org.adaway.ui.log.LogActivity;
 import org.adaway.ui.prefs.PrefsActivity;
-import org.adaway.ui.support.SupportActivity;
+import org.adaway.ui.support.SupportDevDialog;
 import org.adaway.ui.update.UpdateActivity;
 import org.adaway.ui.welcome.WelcomeActivity;
 
@@ -326,7 +326,7 @@ public class HomeActivity extends AppCompatActivity {
      * @param view The source event view.
      */
     private void showSupportActivity(View view) {
-        startActivity(new Intent(this, SupportActivity.class));
+        SupportDevDialog.show(this);
     }
 
     /**

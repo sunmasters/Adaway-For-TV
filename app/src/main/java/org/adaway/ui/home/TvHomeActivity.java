@@ -20,7 +20,9 @@ import org.adaway.helper.PreferenceHelper;
 import org.adaway.helper.ThemeHelper;
 import org.adaway.model.adblocking.AdBlockMethod;
 
+import org.adaway.ui.hosts.TvHostsSourcesActivity;
 import org.adaway.ui.log.TvLogActivity;
+import org.adaway.ui.support.SupportDevDialog;
 
 import static org.adaway.model.adblocking.AdBlockMethod.VPN;
 
@@ -33,6 +35,8 @@ public class TvHomeActivity extends AppCompatActivity {
     private Button updateButton;
     private Button syncButton;
     private Button dnsMonitorButton;
+    private Button sourcesButton;
+    private Button supportDevButton;
     private ProgressBar progressBar;
     
     private ActivityResultLauncher<Intent> prepareVpnLauncher;
@@ -54,6 +58,8 @@ public class TvHomeActivity extends AppCompatActivity {
         updateButton = findViewById(R.id.btn_update);
         syncButton = findViewById(R.id.btn_sync);
         dnsMonitorButton = findViewById(R.id.btn_dns_monitor);
+        sourcesButton = findViewById(R.id.btn_sources);
+        supportDevButton = findViewById(R.id.btn_support_dev);
         progressBar = findViewById(R.id.progress_bar);
 
         homeViewModel = new ViewModelProvider(this).get(HomeViewModel.class);
@@ -66,6 +72,8 @@ public class TvHomeActivity extends AppCompatActivity {
         updateButton.setOnClickListener(v -> homeViewModel.update());
         syncButton.setOnClickListener(v -> homeViewModel.sync());
         dnsMonitorButton.setOnClickListener(v -> startActivity(new Intent(this, TvLogActivity.class)));
+        sourcesButton.setOnClickListener(v -> startActivity(new Intent(this, TvHostsSourcesActivity.class)));
+        supportDevButton.setOnClickListener(v -> SupportDevDialog.show(this));
         
         prepareVpnLauncher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), result -> {
             if (result.getResultCode() == RESULT_OK) {

@@ -132,6 +132,9 @@ dependencies {
         implementation('io.sentry:sentry-android-timber')
     }
 
+    // QR code generation
+    implementation 'com.google.zxing:core:3.5.3'
+
     // Root related
     implementation libs.libsu
 
