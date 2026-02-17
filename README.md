@@ -15,7 +15,7 @@ Now with **Android TV support** — block ads across your phone, tablet, and TV 
 
 ### Android TV
 
-[<img src="images/home.png"
+[<img src="images/support-hosts.png"
     alt="TV home screen with ad-blocking toggle, update, sync, and DNS monitor buttons"
     height="256">](images/home.png)
 [<img src="images/dns-requests.png"
