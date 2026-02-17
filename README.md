@@ -48,24 +48,6 @@ Now with **Android TV support** — block ads across your phone, tablet, and TV 
 For more information visit https://adaway.org
 
 > For the original project README, see [README_OLD.md](README_OLD.md).
-
-## Features
-
-- **Two ad-blocking methods:**
-  - **Root mode** — modifies the system `/etc/hosts` file (requires root access)
-  - **VPN mode** — uses a local VPN to intercept DNS queries (no root required)
-- **Multiple hosts sources** with support for GitHub, GitLab, and Gist providers
-- **Three list types:** Blocked, Allowed (whitelist), and Redirected hosts
-- **DNS request logging** to monitor and manage blocked/allowed domains
-- **DNS over HTTPS (DoH)** support
-- **Quick Settings tile** for fast ad-blocking toggle
-- **App exclusion** — select apps to bypass VPN filtering
-- **Backup and restore** of configuration and lists
-- **Automatic source updates** with ETag/Last-Modified support
-- **Built-in updater** with changelog display
-- **Android TV support** with a dedicated remote-friendly interface
-- **70+ languages** supported
-
 ## Android TV Support
 
 AdAway includes a dedicated interface optimized for Android TV and other large-screen devices controlled via remote.
@@ -87,6 +69,24 @@ AdAway includes a dedicated interface optimized for Android TV and other large-s
 AdAway uses VPN mode on TV devices. On first launch, it will prompt for VPN permission. Once granted, ad-blocking can be toggled directly from the TV home screen. The DNS log viewer lets you monitor and manage requests using your remote.
 
 > **Note:** The TV interface provides the core ad-blocking controls. Advanced features like source management, preferences, and backup/restore are available via the phone/tablet interface.
+
+## Features
+
+- **Two ad-blocking methods:**
+  - **Root mode** — modifies the system `/etc/hosts` file (requires root access)
+  - **VPN mode** — uses a local VPN to intercept DNS queries (no root required)
+- **Multiple hosts sources** with support for GitHub, GitLab, and Gist providers
+- **Three list types:** Blocked, Allowed (whitelist), and Redirected hosts
+- **DNS request logging** to monitor and manage blocked/allowed domains
+- **DNS over HTTPS (DoH)** support
+- **Quick Settings tile** for fast ad-blocking toggle
+- **App exclusion** — select apps to bypass VPN filtering
+- **Backup and restore** of configuration and lists
+- **Automatic source updates** with ETag/Last-Modified support
+- **Built-in updater** with changelog display
+- **Android TV support** with a dedicated remote-friendly interface
+- **70+ languages** supported
+
 
 ## Installing
 
